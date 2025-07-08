@@ -6,6 +6,6 @@ log() {
 }
 
 log "Deploying app manifests via kubectl..."
-kubectl apply -k manifests/
+kubectl apply -k manifest/
 
 log "Setup complete!"
