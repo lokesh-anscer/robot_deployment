@@ -1,0 +1,19 @@
+apiVersion: gitea/v1
+kind: Deployment
+metadata:
+  name: gitea
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gitea
+  template:
+    metadata:
+      labels:
+        app: gitea
+    spec:
+      containers:
+        - name: gitea
+          image: localhost:5000/gitea:v1.0
+          ports:
+            - containerPort: 8080

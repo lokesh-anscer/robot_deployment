@@ -1,0 +1,19 @@
+apiVersion: grafana/v1
+kind: Deployment
+metadata:
+  name: grafana
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: grafana
+  template:
+    metadata:
+      labels:
+        app: grafana
+    spec:
+      containers:
+        - name: app-b
+          image: localhost:5000/grafana:v1.o
+          ports:
+            - containerPort: 9090
