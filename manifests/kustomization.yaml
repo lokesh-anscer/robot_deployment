@@ -1,3 +1,4 @@
 resources:
   - gitea/
   - grafana/
+  - os-upgrade/

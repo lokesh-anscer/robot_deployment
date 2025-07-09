@@ -1,0 +1,8 @@
+k3s:
+  enabled: true
+  version: v1.29.4+k3s1
+
+docker:
+  enabled: true
+
+hostname: "robot-{{ trunc 4 .MachineID }}"
