@@ -1,6 +1,14 @@
 apiVersion: upgrade.cattle.io/v1
-kind: Upgrade
-metadat:
-  name: kairos-os-upgrade
+kind: Plan
+metadata:
+  name: kairos-upgrade
 spec:
-  image: 192.168.1.38:5000/kairos/kairos-os 
+  version: v1.1.0
+  upgrade:
+    image: 192.168.1.38:5000/kairos/kairos-os
+  nodeSelector:
+    matchLabels:
+      kairos.io/os: "kairos"
+  concurrency: 1
+  drain:
+    force: true
