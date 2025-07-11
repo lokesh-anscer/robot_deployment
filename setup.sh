@@ -57,6 +57,6 @@ until kubectl get nodes &>/dev/null; do
 done
 
 log "Deploying app manifests via kubectl..."
-kubectl apply -k manifest/
+kubectl apply -k manifests/
 
 log "Setup complete!
