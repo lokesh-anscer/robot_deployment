@@ -35,9 +35,9 @@ echo "[robot-setup] K3s is ready!"
 echo "[robot-setup] Applying manifests (gitea, grafana, upgrade)..."
 kubectl apply -k manifests/
 
-if [ -f "argo-cd/robot-app.yaml" ]; then
-    echo "[robot-setup] Registering robot Argo CD application..."
-    kubectl apply -f argo-cd/robot-app.yaml
-fi
+# if [ -f "argo-cd/app.yaml" ]; then
+#     echo "[robot-setup] Registering robot Argo CD application..."
+#     kubectl apply -f argo-cd/app.yaml
+# fi
 
 echo "[robot-setup] Robot setup complete! Check pods with:"
