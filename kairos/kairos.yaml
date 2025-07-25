@@ -17,5 +17,4 @@ users:
       - "AAAAC3NzaC1lZDI1NTE5AAAAIHo50QWFQyuVIAJu55UudX8pZt2wTSoymMMzlKibZVkb"
 
 hostname: "robot-{{ trunc 4 .MachineID }}"
-
 timezone: Asia/Kolkata
