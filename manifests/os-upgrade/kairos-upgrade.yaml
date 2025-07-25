@@ -1,5 +1,5 @@
 apiVersion: upgrade.cattle.io/v1
-kind: Plan
+kind: Upgrade
 metadata:
   name: kairos-upgrade
 spec:
