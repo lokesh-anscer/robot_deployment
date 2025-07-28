@@ -1,19 +1,11 @@
 #!/bin/bash
 set -e
 
-echo "🚀 Starting GitOps Setup..."
+echo "Starting GitOps Setup..."
 
 # Location of files
 VERSIONS_FILE="versions.yaml"
 OVERLAY_DIR="manifests/overlays/dev"
-
-# Ensure required tools are installed
-for cmd in yq kustomize kubectl; do
-  if ! command -v $cmd &> /dev/null; then
-    echo "'$cmd' is required but not installed."
-    exit 1
-  fi
-done
 
 # Extract versions from versions.yaml
 echo "Extracting image versions..."
