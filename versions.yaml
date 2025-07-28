@@ -1,0 +1,7 @@
+apps:
+  grafana:
+    image: 192.168.31.85:5000/grafana
+    tag: v1.0
+  gitea:
+    image: 192.168.31.85:5000/gitea
+    tag: v1.0
