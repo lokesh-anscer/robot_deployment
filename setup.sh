@@ -3,7 +3,7 @@ set -e
 
 echo "Starting GitOps Setup..."
 
-sudo kubectl apply -k manifests/ --validate=false
+kubectl apply -k manifests/ --validate=false
 if [ $? -ne 0 ]; then
     echo "Error applying manifests. Please check your configuration."
     exit 1
