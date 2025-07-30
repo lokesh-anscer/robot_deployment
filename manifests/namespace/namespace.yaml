@@ -1,0 +1,22 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: git-tools
+  annotations:
+    acme-corp.com/owner: "devops-team"
+    app.kubernetes.io/name: "git-tools"
+    app.kubernetes.io/maintainer: "Lokesh"
+    app.kubernetes.io/version: "v1.0"
+    www.anscer.com/last-updated: "2025-07-30"
+
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: monitoring
+  annotations:
+    acme-corp.com/owner: "devops-team"
+    app.kubernetes.io/name: "monitoring"
+    app.kubernetes.io/maintainer: "Lokesh"
+    app.kubernetes.io/version: "v1.0"
+    www.anscer.com/last-updated: "2025-07-30"

@@ -51,4 +51,4 @@ if ! kubectl apply -k manifests/ --validate=false; then
     exit 1
 fi
 
-echo "Setup complete. Argo CD will now sync and deploy your apps.
+echo "Setup complete. Argo CD will now sync and deploy your apps."
